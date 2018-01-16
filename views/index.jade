@@ -1,0 +1,45 @@
+extends layout
+
+block content
+
+	include header
+	section.contenedor
+		a(class="galeria" rel="galery1" href="img/peto completa.jpg" title="")
+			section.muestras.uno
+		a(class="galeria" rel="galery2" href="img/elparquetapa.jpg" title="")
+			img( id="kaka" class="galeria" rel="galery2" href="img/elparquecontratapa.jpg" title="")
+			img( id="kaka" class="galeria" rel="galery2" href="img/fotomontajeparque.jpg" title="")
+			section.muestras.dos
+		a(class="galeria" rel="galery3" href="img/dunn.jpg" title="")
+			section.muestras.tres
+			img( id="kaka" class="galeria" rel="galery3" href="img/dunn2.jpg" title="")
+		a(class="galeria" rel="galery4" href="img/macbethtapa.jpg" title="")
+			section.muestras.cuatro
+			img( id="kaka" class="galeria" rel="galery4" href="img/macbethcontratapa.jpg" title="")
+			img( id="kaka" class="galeria" rel="galery4" href="img/fotomontajemacbeth.jpg" title="")
+		a(class="galeria" rel="galery5" href="img/sandokantapa.jpg" title="")
+			section.muestras.cinco
+			img( id="kaka" class="galeria" rel="galery5" href="img/sandokancontratapa.jpg" title="")
+			img( id="kaka" class="galeria" rel="galery5" href="img/fotomontajesandokan.jpg" title="")
+		a(class="galeria" rel="galery6" href="img/afiche.jpg" title="")
+			section.muestras.seis
+			img( id="kaka" class="galeria" rel="galery6" href="img/afiche2.jpg" title="")
+		a(class="fancybox-media" href="http://vimeo.com/250063875")
+			section.muestras.siete
+				video(src="/img/videoeditado.mp4" autoplay loop)
+		a(class="galeria" rel="galery8" href="img/morodiseñocompleta.jpg" title="")
+			section.muestras.ocho
+		a(class="galeria" rel="galery9" href="img/tripticoext.jpg" title="")
+			section.muestras.nueve
+			img( id="kaka" class="galeria" rel="galery9" href="img/tripticoint.jpg" title="")
+	script(src="js/slider.js")
+	//- script(src="js/jquery.min.js")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	script.
+		!window.jquery && document.write('<script src="js/jquery.min.js"><\/script>')
+	script(src="js/jquery.mousewheel.pack.js")
+	//- script(src="/js/jquery.fancybox.js?v=2.1.7")
+	script(src="js/jquery.fancybox.js")
+	script(src="js/codigos.js")
+	script(src="js/jquery.fancybox-media.js?v=1.0.6")
+	include footer

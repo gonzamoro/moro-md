@@ -1,0 +1,34 @@
+extends layout
+
+block content
+
+	include header
+	div.title
+		h2 Contacto
+	section.contenedor2
+		section.infocontacto
+			p Tel: 1564663015
+		form.formularioo#formu(method="POST" name="formu")
+				div.campos
+					label(for="nombre") Nombre:
+					input(type="text" id="nombre" name="nombree")
+					div#alertanom
+				div.campos
+					label(for="e-mail") E-mail:
+					input(type="e-mail" id="email" name="emaill")
+					div#alertamail
+				div.campos
+					label(for="telefono") Telefono:
+					input(type="text" id="telefono" name="telefonoo")
+					div#alertatel
+				div.campos
+					label(for="mensaje") Mensaje:
+					textarea(type="text" id="mensaje" name="mensaje")
+					div#alertamens
+				div.campos
+					input(type="button" id="enviar" name="enviarr" value="enviar")
+	script(src="/js/validaciones2.js")
+	include footer
+
+
+
