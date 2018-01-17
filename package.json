@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "mi portfolio online",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "trabajos",
+    "diseño"
+  ],
+  "author": "gonzamoroo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "express-method-override": "0.0.3",
+    "jade": "^1.11.0",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.11.14",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.2.0",
+    "serve-favicon": "^2.4.5"
+  }
+}
