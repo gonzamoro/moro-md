@@ -13,4 +13,11 @@ $(document).ready(function() {
 		openEffect	: 'fade',
 		closeEffect	: 'fade'
 	});
+	$(".fancybox-media").fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
 });
