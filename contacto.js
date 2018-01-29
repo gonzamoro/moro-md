@@ -23,8 +23,8 @@ Contacto.tata = (req, res, next) => {
       telefono= req.body.telefonoo,
       mensaje= req.body.mensaje,
       mailOptions = {
-      from: 'gonxa08@hotmail.com',
-      to: 'gonxa08@hotmail.com',
+      from: 'test.md136@gmail.com',
+      to: 'test.md136@gmail.com',
       subject: 'Sending Email using Node.js',
       text:`
             nombre: ${nombre}
