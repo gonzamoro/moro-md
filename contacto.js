@@ -29,7 +29,7 @@ Contacto.tata = (req, res, next) => {
       email= req.body.emaill,
       telefono= req.body.telefonoo,
       mensaje= req.body.mensaje,
-      text =`
+      text1 =`
             nombre: ${nombre}
             e-mail: ${email}
             telefono: ${telefono}
@@ -42,12 +42,7 @@ Contacto.tata = (req, res, next) => {
     from: 'test.md136@gmail.com', // sender address
     to: 'test.md136@gmail.com', // list of receivers
     subject: "Hello ✔", // Subject line
-    text: `
-            nombre: ${nombre}
-            e-mail: ${email}
-            telefono: ${telefono}
-            mensaje: ${mensaje}
-            `, // plain text body
+    text: text1, // plain text body
     html: "<b>Hello world?</b>" // html body
   });
 
