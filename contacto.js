@@ -34,7 +34,7 @@ Contacto.tata = (req, res, next) => {
             e-mail: ${email}
             telefono: ${telefono}
             mensaje: ${mensaje}
-            `;
+            `
 }
 
   // send mail with defined transport object
