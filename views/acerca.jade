@@ -3,34 +3,18 @@ extends layout
 block content
 
 	include header
-	section.contenedor2
-		div.title
-			h2 Acerca
-		section.imgacerca
-			img(src="/img/bocetos.jpg" class="grilla")
-		section.infoacerca
-			p
-				|Soy Gonzalo Moroni,
-				|soy diseñador gráfico,
-				|Estuve trabajando como freelancer hasta el día de hoy. Mis mayores skills son el
-				|dibujo, la ilustración y el branding.
-				|Estudié programación web de forma autodidacta por dos años, lo que me permitió realizar mi pagina web.
-			br
-			p <b>TRABAJO SOBRE:</b>
-			br
-			p
-			p	> Desarrollo de marca / branding
-			p	> Ilustración
-			p	> Diseño web
-			p	> Multimedia
-			br
-			p <b>HERRAMIENTAS:</b>
-			br
-			p	> Illustrator
-			p	> Photoshop
-			p	> After effects
-			p	> HTML
-			p	> CSS
-			p	> Javascript
-			p	> Node.js
+	h1 Configurar regado
+	form.formularioo#formu(method="POST" name="formu")
+		div
+			label(for="tiemporegado") tiempo de regado:
+			input(type="text" id="tiemporegado")
+		div
+			label(for="frecuencia") frecuencia:
+			input(type="text" id="frecuencia")
+		div
+			input(type="submit" id="enviar" value="regar")
+		div.caja
+		div.muestro-tiempo
+	script(src="/js/regado.js")
 	include footer
+
