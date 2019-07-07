@@ -22,7 +22,7 @@ router
 	} )
 	.get('/regado', (req, res, next)=>{
 		let locals = {title: 'Regado'}
-		res.render('regado', locals)
+		res.render('regado.html', locals)
 	} )
 
 
