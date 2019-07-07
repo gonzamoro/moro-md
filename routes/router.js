@@ -20,6 +20,10 @@ router
 		let locals = {title: 'Morodiseño:Acerca'}
 		res.render('acerca', locals)
 	} )
+	.get('/regado', (req, res, next)=>{
+		let locals = {title: 'Regado'}
+		res.render('regado', locals)
+	} )
 
 
 
